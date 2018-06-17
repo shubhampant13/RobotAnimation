@@ -1,6 +1,16 @@
+.text1{
+  font-family: Verdana;
+  font-size: 50px;
+  color: red;
+}
+
 .robot {
   display: flex;
   justify-content:center;  
+}
+
+.eyes {
+  display :flex;
 }
 
 .head,.left_hand,.torso,.right_hand,.left_leg,.right_leg{
@@ -29,6 +39,25 @@
   border-radius: 200px 200px 0 0;
   margin-bottom: 10px;
  }
+
+.left_eye, .right_eye { 
+  width: 20px; 
+  height: 20px; 
+  border-radius: 15px; 
+  background-color: white;  
+} 
+
+.left_eye { 
+  position: relative; 
+  top: 100px; 
+  left: 40px; 
+} 
+
+.right_eye { 
+  position: relative; 
+  top: 100px; 
+  left: 120px; 
+}
 
 /*Head Section end*/
 
@@ -72,3 +101,10 @@
   margin-left: 35px; 
 }
 /*Lower Section End*/
+
+/*Transform*/
+
+.move:hover {
+   transform: rotate(20deg);
+
+}
