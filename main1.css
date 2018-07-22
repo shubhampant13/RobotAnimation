@@ -1,110 +1,64 @@
-.text1{
-  font-family: Verdana;
-  font-size: 50px;
-  color: red;
+.common {
+	background-color: green;
 }
 
-.robot {
-  display: flex;
-  justify-content:center;  
-}
-
-.eyes {
-  display :flex;
-}
-
-.head,.left_hand,.torso,.right_hand,.left_leg,.right_leg{
-       background-color: green;
-
-}
-
-.left_hand,.right_hand{
-  width: 40px; 
-  height: 125px;
-  border-radius: 100px; 
-}
-
-.left_leg,.right_leg{
-  width: 40px; 
-  height: 120px;
-  border-radius: 0 0 100px 100px; 
-}
-
-
-/*Head Section Start*/
-.head { 
-  width: 200px; 
-  margin: 0 auto; 
-  height: 150px; 
-  border-radius: 200px 200px 0 0;
-  margin-bottom: 10px;
+.middle, .lower , .head{ 
+	display : flex;
+	justify-content: center;
+	transition: all 2s;
  }
 
-.left_eye, .right_eye { 
-  width: 20px; 
-  height: 20px; 
-  border-radius: 15px; 
-  background-color: white;  
-} 
-
-.left_eye { 
-  position: relative; 
-  top: 100px; 
-  left: 40px; 
-} 
-
-.right_eye { 
-  position: relative; 
-  top: 100px; 
-  left: 120px; 
+.eye {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius:10px;
 }
 
-/*Head Section end*/
 
-/*Middle Section Start*/
- .middle { 
-  width: 300px; 
-  height: 150px;
-  margin : 0 auto;
-  display: flex; 
-} 
+.head {
+   width: 100px;
+   height : 60px;
+   border-top-right-radius : 50px ;
+   border-top-left-radius : 50px ;
+   margin: auto;
+}
 
-.left_hand { 
-  margin-right: 10px; 
-} 
-
- .torso { 
-  width: 200px; 
-  height: 200px;
-  border-radius: 0 0 50px 50px; 
+.hand { 
+   width: 20px;
+   height : 50px;
+   border-radius: 30px;
  }
 
-.right_hand { 
-  margin-left: 10px; 
-} 
-/*Middle Section End*/ 
+.torso { 
+   width: 100px;
+   height : 80px;
+   border-bottom-right-radius : 20px ;
+   border-bottom-left-radius : 20px ;
+ }
+
+ .lower1, .lower2 { 
+   width: 20px;
+   height : 30px;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+ }
 
 
-/*Lower Section Start*/
-.lower_body { 
-  width: 200px; 
-  height: 200px;
-  margin: 0 auto;
-  display: flex; 
+ /* Movements */
+
+.lower1:hover {
+   transform: rotateZ(20deg);
 }
 
-.left_leg { 
-  margin-left: 45px; 
-} 
-
-.right_leg { 
-  margin-left: 35px; 
+.lower2:hover {
+   transform: rotateZ(-20deg);
 }
-/*Lower Section End*/
 
-/*Transform*/
+.hleft:hover {
+   transform: rotateZ(90deg);
+}
 
-.move:hover {
-   transform: rotate(20deg);
-
+.hright:hover {
+   transform: rotateZ(-90deg);
 }
